@@ -1,14 +1,15 @@
 .header
-  .user_name
+  .header__name
     suna
-  .newg_roup
-    =link_to "#", class: "header__btn" do
-      = icon('fab', 'cog', class: "header__btn--icon")
-  .settings
-    =link_to "#", class: "header__btn" do
-      =icon('fab', 'cog', class: "header__btn--icon")
+  .header__icon
+    =link_to "#", class: "header__icon header__icon--edit" do
+      = icon('fas', 'edit', class: "header__icon")
+      %span<>
+    =link_to "#", class: "header__icon header__icon--setting" do
+      =icon('fas', 'cog', class: "header__icon")
 .contents
-  .group_name
-    sample
-  .latest_message
-    Hello world!
+  .contents__content
+    .contents__content__name
+      sample
+    .contents__content__message
+      Hello world!
