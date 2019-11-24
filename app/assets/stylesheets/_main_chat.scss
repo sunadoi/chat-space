@@ -1,3 +1,5 @@
+$blackColor: #434A54;
+$grayColor: #999999;
 .main_chat {
   &__header {
     width: 1150px;
@@ -16,7 +18,7 @@
       &__member {
         padding-top: 15px;
         font-size: 12px;
-        font-color: #999999;
+        font-color: $grayColor;
       }
     }
     &__btn {
@@ -26,6 +28,32 @@
       &--edit {
         padding: 10px 20px;
         border: solid 1px;
+      }
+    }
+  }
+  &__contents {
+    background-color: #fafafa;
+    height: 100%;
+    &__content {
+      margin-left: 40px;
+      padding-top: 46px;
+      &__user {
+        display: flex;
+        &__name {
+          font-size: 16px;
+          font-weight: bold;
+          color: $blackColor;
+          margin-right: 10px;
+        }
+        &__time {
+          color: $grayColor;
+          font-size: 12px;
+        }
+      }
+      &__text {
+        padding-top: 10px;
+        font-size: 14px;
+        color: $blackColor;
       }
     }
   }
