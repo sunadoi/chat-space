@@ -1,0 +1,32 @@
+.main_chat {
+  &__header {
+    width: 1150px;
+    height: 100px;
+    position: right;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #eeeeee;
+    &__contents {
+      padding-left: 40px;
+      &__group_name {
+        padding-top: 35px;
+        font-size: 20px;
+        font-color: #333333;
+      }
+      &__member {
+        padding-top: 15px;
+        font-size: 12px;
+        font-color: #999999;
+      }
+    }
+    &__btn {
+      line-height: 100px;
+      margin-right: 40px;
+      height: 100px;
+      &--edit {
+        padding: 10px 20px;
+        border: solid 1px;
+      }
+    }
+  }
+}
