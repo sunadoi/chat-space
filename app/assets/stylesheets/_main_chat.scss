@@ -33,7 +33,7 @@ $grayColor: #999999;
   }
   &__contents {
     background-color: #fafafa;
-    height: 100%;
+    height: calc(100vh - 100px - 90px);
     &__content {
       margin-left: 40px;
       padding-top: 46px;
@@ -55,6 +55,31 @@ $grayColor: #999999;
         font-size: 14px;
         color: $blackColor;
       }
+    }
+  }
+  &__form {
+    height: 90px;
+    line-height: 90px;
+    background-color: #ddd;
+    &__content {
+      &__text {
+        width: 950px;
+        height: 50px;
+        margin-left: 40px;
+        padding-left: 10px;
+        font-size: 16px;
+        color: $blackColor;
+      }
+    }
+    &__input {
+      font-size: 20px;
+    }
+    &__submit {
+      background-color: #38AEF0;
+      color: white;
+      height: 50px;
+      margin: 0 40 0 15;
+      padding: 10px 25px;
     }
   }
 }

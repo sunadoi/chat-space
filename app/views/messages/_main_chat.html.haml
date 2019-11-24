@@ -17,3 +17,11 @@
           2019/11/24/19:00:00
       .main_chat__contents__content__text
         this is a first message
+  .main_chat__form
+    .main_chat__form__content
+      = form_for "#" do |f|
+        = f.text_field :text, class: "main_chat__form__content__text", placeholder: "type a message"
+        %label{class: "main_chat__form__input"}
+          = icon('fas', 'image')
+          %input{type: "file", style: "display: none;"}
+        = f.submit value: "Send", class: "main_chat__form__submit"
