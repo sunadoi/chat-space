@@ -1,49 +1,49 @@
 $whiteColor: #ffffff;
-
-.header {
-  background-color: #234141;
-  width: 300px;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  &__name {
-    font-size: 16px;
-    font-weight: bold;
-    color: $whiteColor;
-    line-height: 100px;
-    margin-left: 20px;
-  }
-  &__icon {
-    font-weight: 900;
-    line-height: 100px;
-    color: $whiteColor;
-    &--edit {
-      padding-right: 5px;
-      color: $whiteColor;
-    }
-    &--setting {
-      margin-right: 20px;
-    }
-  }
-}
-
-.contents {
-  padding-top: 20px;
-  background-color: #2f3e51;
-  width: 300px;
-  height: 100%;
-  padding-bottom: 40px;
-  &__content {
-    height: calc(100vh - 100px);
-    margin-left: 20px;
-    color: $whiteColor;
-    font-weight: bold;
+.side_bar{
+  &__header {
+    background-color: #234141;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
     &__name {
-      font-size: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      color: $whiteColor;
+      line-height: 100px;
+      margin-left: 20px;
     }
-    &__message {
-      font-size: 11px;
-      padding-top: 5px;
+    &__icon {
+      font-weight: 900;
+      line-height: 100px;
+      color: $whiteColor;
+      &--edit {
+        padding-right: 5px;
+      }
+      &--setting {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  &__contents {
+    padding-top: 20px;
+    background-color: #2f3e51;
+    width: 300px;
+    height: 100%;
+    padding-bottom: 40px;
+    &__content {
+      height: calc(100vh - 100px);
+      margin-left: 20px;
+      color: $whiteColor;
+      font-weight: bold;
+      &__name {
+        font-size: 15px;
+      }
+      &__message {
+        font-size: 11px;
+        padding-top: 5px;
+      }
     }
   }
 }
