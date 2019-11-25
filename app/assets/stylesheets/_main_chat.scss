@@ -69,10 +69,13 @@ $grayColor: #999999;
         padding-left: 10px;
         font-size: 16px;
         color: $blackColor;
+        position: relative;
       }
     }
     &__input {
       font-size: 20px;
+      position: absolute;
+      right: 150px;
     }
     &__submit {
       background-color: #38AEF0;
