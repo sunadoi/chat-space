@@ -2,26 +2,21 @@
   .main_chat__header
     .main_chat__header__contents
       .main_chat__header__contents__group_name
-        group name
+        = @group.name
       .main_chat__header__contents__member
-        member
+        = "Member:"
+        - @group.users.each do |user|
+          = "#{user.name}"
     .main_chat__header__btn
-      = link_to "#", class: "main_chat__header__btn--edit" do
+      = link_to edit_group_path(@group.id), class: "main_chat__header__btn--edit" do
         Edit
   .main_chat__contents
-    .main_chat__contents__content
-      .main_chat__contents__content__user
-        .main_chat__contents__content__user__name
-          suna
-        .main_chat__contents__content__user__time
-          2019/11/24/19:00:00
-      .main_chat__contents__content__text
-        this is a first message
+    = render @messages
   .main_chat__form
-    .main_chat__form__content
-      = form_for "#" do |f|
-        = f.text_field :text, class: "main_chat__form__content__text", placeholder: "type a message"
-        %label{class: "main_chat__form__input"}
+    = form_for [@group, @message] do |f|
+      .main_chat__form__content
+        = f.text_field :content, class: "main_chat__form__content__text", placeholder: "type a message"
+        = f.label :image, class: "main_chat__form__input" do
           = icon('fas', 'image')
-          %input{type: "file", style: "display: none;"}
+          = f.file_field :image, style: "display: none;"
         = f.submit value: "Send", class: "main_chat__form__submit"

@@ -27,10 +27,9 @@ $whiteColor: #ffffff;
   }
 
   &__contents {
-    padding-top: 20px;
     background-color: #2f3e51;
     width: 300px;
-    height: calc(100vh - 100px - 20px);
+    height: calc(100vh - 100px);
     &__content {
       height: calc(100vh - 100px);
       margin-left: 20px;
@@ -38,6 +37,7 @@ $whiteColor: #ffffff;
       font-weight: bold;
       &__name {
         font-size: 15px;
+        padding-top: 20px;
         a {
           color: $whiteColor;
           text-decoration: none;
