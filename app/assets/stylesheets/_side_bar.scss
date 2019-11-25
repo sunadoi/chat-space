@@ -38,6 +38,10 @@ $whiteColor: #ffffff;
       font-weight: bold;
       &__name {
         font-size: 15px;
+        a {
+          color: $whiteColor;
+          text-decoration: none;
+        }
       }
       &__message {
         font-size: 11px;
