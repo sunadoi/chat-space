@@ -1,0 +1,16 @@
+.side_bar
+  .side_bar__header
+    .side_bar__header__name
+      suna
+    .side_bar__header__icon
+      =link_to "#", class: "side_bar__header__icon side_bar__header__icon--edit" do
+        = icon('fas', 'edit', class: "header__icon")
+        %span<>
+      =link_to "#", class: "side_bar__header__icon side_bar__header__icon--setting" do
+        =icon('fas', 'cog', class: "header__icon")
+  .side_bar__contents
+    .side_bar__contents__content
+      .side_bar__contents__content__name
+        sample
+      .side_bar__contents__content__message
+        Hello world!
