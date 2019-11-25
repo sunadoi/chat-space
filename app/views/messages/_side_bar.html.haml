@@ -10,7 +10,9 @@
         =icon('fas', 'cog', class: "header__icon")
   .side_bar__contents
     .side_bar__contents__content
-      .side_bar__contents__content__name
-        sample
-      .side_bar__contents__content__message
-        Hello world!
+      - current_user.groups.each do |group|
+        .side_bar__contents__content__name
+          = link_to group_messages_path(group) do
+            = group.name
+        .side_bar__contents__content__message
+          メッセージはまだありません。
