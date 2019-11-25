@@ -3,7 +3,7 @@
     .side_bar__header__name
       = current_user.name
     .side_bar__header__icon
-      =link_to "#", class: "side_bar__header__icon side_bar__header__icon--edit" do
+      =link_to new_group_path, class: "side_bar__header__icon side_bar__header__icon--edit" do
         = icon('fas', 'edit', class: "header__icon")
         %span<>
       =link_to edit_user_path(current_user), class: "side_bar__header__icon side_bar__header__icon--setting" do
