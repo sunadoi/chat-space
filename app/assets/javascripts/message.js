@@ -51,7 +51,6 @@ $(function(){
     })
     .done(function(data){
       var html = buildHTML(data);
-      console.log(data)
       $('.main_chat__contents').append(html);
       $('.main_chat__contents').animate({ scrollTop: $('.main_chat__contents')[0].scrollHeight});
       $('.new_message')[0].reset();
