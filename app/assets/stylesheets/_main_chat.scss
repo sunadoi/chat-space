@@ -34,7 +34,9 @@ $grayColor: #999999;
   }
   &__contents {
     background-color: #fafafa;
-    height: calc(100vh - 100px - 90px);
+    height: calc(100vh - 100px - 90px - 40px);
+    overflow: scroll;
+    padding-bottom: 40px;
     &__content {
       margin-left: 40px;
       padding-top: 46px;
@@ -58,6 +60,12 @@ $grayColor: #999999;
       }
     }
   }
+
+  .lower-message__image {
+    height: 90px;
+    width: 120px;
+  }
+
   &__form {
     height: 90px;
     line-height: 90px;
