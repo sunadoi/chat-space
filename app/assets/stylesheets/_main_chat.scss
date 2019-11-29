@@ -1,8 +1,8 @@
 $blackColor: #434A54;
 $grayColor: #999999;
 .main_chat {
+  width: calc(100vw - 25vw);
   &__header {
-    width: 1150px;
     height: 100px;
     position: right;
     display: flex;
@@ -71,27 +71,27 @@ $grayColor: #999999;
     line-height: 90px;
     background-color: #ddd;
     &__content {
+      position: relative;
       &__text {
-        width: 950px;
+        width: 57vw;
         height: 50px;
-        margin-left: 40px;
-        padding-left: 10px;
+        margin-left: 2vw;
+        padding-left: 1vw;
         font-size: 16px;
         color: $blackColor;
-        position: relative;
       }
-    }
-    &__input {
-      font-size: 20px;
-      position: absolute;
-      right: 150px;
-    }
-    &__submit {
-      background-color: #38AEF0;
-      color: white;
-      height: 50px;
-      margin: 0 40 0 15;
-      padding: 10px 25px;
+      &__input {
+        font-size: 20px;
+        position: absolute;
+        left: 57vw;
+      }
+      &__submit {
+        background-color: #38AEF0;
+        color: white;
+        height: 50px;
+        margin: 0 40 0 15;
+        padding: 1vh 2vw;
+      }
     }
   }
 }
