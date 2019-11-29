@@ -16,7 +16,7 @@
     = form_for [@group, @message] do |f|
       .main_chat__form__content
         = f.text_field :content, class: "main_chat__form__content__text", placeholder: "type a message"
-        = f.label :image, class: "main_chat__form__input" do
+        = f.label :image, class: "main_chat__form__content__input" do
           = icon('fas', 'image')
           = f.file_field :image, style: "display: none;"
-        = f.submit value: "Send", class: "main_chat__form__submit"
+        = f.submit value: "Send", class: "main_chat__form__content__submit"
